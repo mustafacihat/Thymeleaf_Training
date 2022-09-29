@@ -22,7 +22,8 @@ public class UserController {
     @GetMapping("/register")
     public String registerUser(Model model) {
         model.addAttribute("users", userService.getUsers());
-        return "/user/register-page";
+        return "/user/register-pag";
+        // TODO - Error
     }
 
     @GetMapping("/create-page")
