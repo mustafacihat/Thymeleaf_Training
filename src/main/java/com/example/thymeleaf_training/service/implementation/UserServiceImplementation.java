@@ -7,7 +7,8 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 
-@Service
+// TODO Error2
+//@Service
 public class UserServiceImplementation implements UserService {
     @Override
     public List<User> getUsers() {
