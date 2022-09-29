@@ -19,7 +19,8 @@ public class UserController {
     @Autowired
     private UserService userService;
 
-    @GetMapping("/register")
+    // TODO Error3
+    @GetMapping("/registe")
     public String registerUser(Model model) {
         model.addAttribute("users", userService.getUsers());
         return "/user/register-page";
