@@ -1,0 +1,3 @@
+hit the url -> http://localhost:8080/user/create-page
+
+fill the form and click the submit button

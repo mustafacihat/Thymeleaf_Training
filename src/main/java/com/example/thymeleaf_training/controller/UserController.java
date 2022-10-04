@@ -32,7 +32,6 @@ public class UserController {
         return "/user/create-page";
     }
 
-    // TODO Error4 - Convert to PostMapping
     @GetMapping("create")
     public String createUser(@ModelAttribute  User user) {
         userService.save(user);
