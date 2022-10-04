@@ -53,7 +53,7 @@
             </thead>
             <tbody>
 
-                <tr th:each="user,userStat:${users}" th:style="${userStat.index>6} ? 'color:red'">
+                <tr th:each="user,userStat:${users}" th:style="${userStat.index>9} ? 'color:red'">
                     <td th:text="${userStat.count}"></td>
                     <td th:text="${user.firstName}"></td>
                     <td th:text="${user.lastName}"></td>
