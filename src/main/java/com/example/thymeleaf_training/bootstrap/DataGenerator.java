@@ -9,8 +9,7 @@ import org.springframework.stereotype.Component;
 import java.util.ArrayList;
 import java.util.List;
 
-// TODO missing annotation error5
-//@Component
+
 public class DataGenerator {
 
     public static final List<User> USER_LIST = new ArrayList<>();
