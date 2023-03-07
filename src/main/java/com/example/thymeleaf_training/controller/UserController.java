@@ -35,7 +35,7 @@ public class UserController {
         return "/user/create-page";
     }
 
-    @GetMapping("create")
+    @GetMapping("/create")
     public String createUser(@ModelAttribute  User user) {
         userService.save(user);
         return "redirect:/user/register";
