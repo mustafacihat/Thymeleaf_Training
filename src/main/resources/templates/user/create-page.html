@@ -35,7 +35,7 @@
 
 <div class="mystyle">
 
-    <form th:action="@{/user/create}" method="post" th:object="${user}" class="row g-3">
+    <form th:action="@{/templates/user/create}" method="post" th:object="${user}" class="row g-3">
         <div class="col-4"></div>
         <div class="col-8">
             <div class="row" style="margin-top: 1em">
@@ -58,7 +58,7 @@
                 <div class="col-md-3">
                     <label for="validationDefault04" class="form-label">State</label>
                     <select class="form-select" id="validationDefault04" th:field="*{state}" required>
-                        <option th:each="theState:${states}" th:value="${theState}" th:text="${theState}"></option>
+                        <option th:each="theState:${states}" th:value="${theState}" th:text="${theStates.name}"></option>
                     </select>
                 </div>
                 <div class="col-md-2">
